@@ -4,7 +4,7 @@ Sub tabellenblaeter_loeschen()
 
 ' Einfaches Makro, um leere Tabellenblätter zu löschen
 ' Manuel S. Hubacher
-' 2016-03-07
+' 2016-03-09
 ' Erstellt mit/für Excel für Mac, Version 15.19.1
 
 ' Variablen deklarieren
@@ -19,7 +19,7 @@ Application.DisplayAlerts = False
 
 For Each wks In ActiveWorkbook.Worksheets
 
-    ' 1. Bedingung: WorksheetFunction.CountA zählt die nichtleeren Zellen eines Tabellenblattes
+    ' 1. Bedingung: WorksheetFunction.CountA zählt die nicht leeren Zellen eines Tabellenblattes
     ' 2. Bedingung: Mindestens ein Tabellenblatt übrig lassen, auch wenn dieses leer ist
     If WorksheetFunction.CountA(wks.Cells) = 0 And _
     ActiveWorkbook.Sheets.Count > 1 Then wks.Delete

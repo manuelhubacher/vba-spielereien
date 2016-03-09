@@ -1,10 +1,10 @@
 Attribute VB_Name = "AddSheets"
 
-Sub neue_tabellenblaeter()
+Sub neue_tabellenblaetter()
 
 ' Einfaches Makro, um neue Tabellenblätter zu erstellen
 ' Manuel S. Hubacher
-' 2016-03-07
+' 2016-03-09
 ' Erstellt mit/für Excel für Mac, Version 15.19.1
 
 ' Userinput: Anzahl Tabellenblätter
@@ -16,7 +16,7 @@ If n = "" Then
     Exit Sub
 End If
 
-' Testen, ob eine Zahl eingegebn wurde
+' Testen, ob eine Zahl eingegeben wurde
 If Not IsNumeric(n) Then
     MsgBox "Keine Zahl eingegeben. Makro wird beendet.", vbInformation
     Exit Sub
