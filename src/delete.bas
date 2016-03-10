@@ -1,6 +1,6 @@
 Attribute VB_Name = "DeleteSheets"
 
-Sub tabellenblaeter_loeschen()
+Sub tabellenblaetter_loeschen()
 
 ' Einfaches Makro, um leere Tabellenblätter zu löschen
 ' Manuel S. Hubacher
