@@ -3,24 +3,24 @@ Option Explicit
 
 Sub neue_tabellenblaeter()
 
-' Einfaches Makro, um neue TabellenblÃ¤tter zu erstellen
+' Einfaches Makro, um neue Tabellenblätter zu erstellen
 ' Manuel S. Hubacher
 ' 2016-03-07
-' Erstellt mit/fÃ¼r Excel fÃ¼r Mac, Version 15.19.1
+' Erstellt mit/für Excel für Mac, Version 15.19.1
 
 Dim intAnzBlatt As Integer
 Dim i As Integer
 
-' Userinput: Anzahl TabellenblÃ¤tter
-intAnzBlatt = InputBox("Bitte geben Sie die Anzahl der zu erstellenden TabellenblÃ¤tter an.", "Anzahl eingeben", vbOKCancel)
+' Userinput: Anzahl Tabellenblätter
+intAnzBlatt = InputBox("Bitte geben Sie die Anzahl der zu erstellenden Tabellenblätter an.", "Anzahl eingeben", vbOKCancel)
 
-' Testen, ob zu viele (mehr als 20) neue TabellenblÃ¤tter erstellt werden
+' Testen, ob zu viele (mehr als 20) neue Tabellenblätter erstellt werden
 If intAnzBlatt > 20 Then
-    MsgBox "Sie mÃ¶chten zu viele neue TabellenblÃ¤tter erstellen. Dieses Makro erlaubt hÃ¶chsten 20 neue TabellenblÃ¤tter zu erstellen. Sie haben aber " & intAnzBlatt & " eingegeben."
+    MsgBox "Sie möchten zu viele neue Tabellenblätter erstellen. Dieses Makro erlaubt höchsten 20 neue Tabellenblätter zu erstellen. Sie haben aber " & intAnzBlatt & " eingegeben."
     Exit Sub
 End If
 
-' TabellenblÃ¤tter erstellen
+' Tabellenblätter erstellen
 For i = 1 To intAnzBlatt
     Sheets.Add After:=Worksheets(Worksheets.Count)
 Next i
