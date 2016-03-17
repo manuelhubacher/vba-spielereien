@@ -13,7 +13,7 @@ Dim wks As Worksheet
 Application.ScreenUpdating = False
 Application.DisplayAlerts = False
 
-' Leere TabellenblÃ¤tter lÃ¶schen
+' Leere Tabellenblätter löschen
 '------------------------------
 
 For Each wks In ActiveWorkbook.Worksheets
